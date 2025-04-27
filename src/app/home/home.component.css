@@ -1,0 +1,22 @@
+
+/* Media Queries for responsive design */
+
+@media (max-width: 1000px) {
+  .login-grid {
+    grid-template-columns: none;
+  }
+
+  .splash-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .login-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .splash-image {
+    grid-column:unset;
+  }
+}
